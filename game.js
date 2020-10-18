@@ -17,6 +17,10 @@ function component(width, height, color, x, y) {
     ctx.fillStyle = color;
     ctx.fillRect(this.x, this.y, this.width, this.height);
   }
+  this.clear = function() {
+    ctx = myGameArea.context;
+    ctx.clearRect(this.x, this.y, this.width, this.height);
+  }
 }
 
 var myGameArea = {
@@ -35,7 +39,7 @@ var myGameArea = {
   }
 
   function updateGameArea() {
-    myGameArea.clear();
+    myCharacter.clear(); //we use myCharacter.clear() instead of myGameArea.clear() because we don't want the ground to clear
     myCharacter.x += 1;
     ground.x += 1;
     myCharacter.update();
