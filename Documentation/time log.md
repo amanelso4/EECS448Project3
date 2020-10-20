@@ -23,3 +23,4 @@
 | Meeting to checkup on initial progress                | .25 hour              | Entire Team        |
 | Converted time estimation document to markdown        | .16 hour              | Reece Mathews      |
 | Added player class, with movement                     | 1.06 hour             | Kevin Carlson      |
+| Finished Design Paradigm Document                     | EEEEEEEEE             | Amanda Nelson      |
