@@ -15,12 +15,12 @@
 
 # Daily Time Log
 
-| Task                                                  | Time Spent per person | Person Responsible |
-|-------------------------------------------------------|-----------------------|--------------------|
-| Meeting to divide workload                            | .5 hours              | Entire Team        |
-| Created Time Estimation Document                      | .25 hour              | Amanda Nelson      |
-| Added initial obstacle class                          | 1 hour                | Reece Mathews      |
-| Meeting to checkup on initial progress                | .25 hour              | Entire Team        |
-| Converted time estimation document to markdown        | .16 hour              | Reece Mathews      |
-| Added player class, with movement                     | 1.06 hour             | Kevin Carlson      |
-| Finished Design Paradigm Document                     | EEEEEEEEE             | Amanda Nelson      |
+| Task                                             | Time Spent per person | Person Responsible | Date  |
+|--------------------------------------------------|-----------------------|--------------------|-----  |
+| Meeting to divide workload                       | .5 hours              | Entire Team        | 10/17 |
+| Created Time Estimation Document                 | .25 hour              | Amanda Nelson      | 10/18 |
+| Added initial obstacle class                     | 1 hour                | Reece Mathews      |       |
+| Meeting to checkup on initial progress           | .25 hour              | Entire Team        | 10/19 |
+| Converted time estimation document to markdown   | .16 hour              | Reece Mathews      |       |
+| Added player class, with movement                | 1.06 hour             | Kevin Carlson      |       |
+| Made Documentation Plan Document/Fixed Time Log  | .75 hours             | Amanda Nelson      | 10/20 |
