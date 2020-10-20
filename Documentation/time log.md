@@ -22,3 +22,4 @@
 | Added initial obstacle class                          | 1 hour                | Reece Mathews      |
 | Meeting to checkup on initial progress                | .25 hour              | Entire Team        |
 | Converted time estimation document to markdown        | .16 hour              | Reece Mathews      |
+| Added player class, with movement                     | 1.06 hour             | Kevin Carlson      |
