@@ -22,7 +22,7 @@ user story method where Projects 1 and 2 represent your inventory of projects)
         1. User Input
         1. Component Reaction??? ASK TEAM
 
-1. One or more UML Modeling Diagrams
+1. (Done) One or more UML Modeling Diagrams
     1. Activity Diagram
 
 1. Identify Design Patterns

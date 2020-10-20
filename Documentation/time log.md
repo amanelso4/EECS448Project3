@@ -24,3 +24,4 @@
 | Converted time estimation document to markdown   | .16 hour              | Reece Mathews      |       |
 | Added player class, with movement                | 1.06 hour             | Kevin Carlson      |       |
 | Made Documentation Plan Document/Fixed Time Log  | .75 hours             | Amanda Nelson      | 10/20 |
+| Finished UML Modeling Diagram Requirement        | .5  hours             | Amanda Nelson      | 10/20 |
