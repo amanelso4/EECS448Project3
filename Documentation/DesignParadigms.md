@@ -1,5 +1,5 @@
+# Design Paradigm Document
 EECS 448 Team 2
-Design Paradigm Documentation
 	For our EECS 448 Project 3, we have chosen to use the Event Driven Design Paradigm to make our obstacle path game for users to play and interact with. We feel as though it is definitely very obvious to use this design paradigm for our game considering the principles of what the game is.
 	In our game, the player will have to jump over different obstacles to continue running down the path to the finish line. If they hit an obstacle, then they will lose the game and have to start from the beginning of the course. 
 	An event driven design paradigm is one where a specific action or even given by the provider triggers a change of state within the project that will be transmitted all the way down by message channels to the consumer. 
