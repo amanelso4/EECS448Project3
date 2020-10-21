@@ -8,7 +8,6 @@
 user story method where Projects 1 and 2 represent your inventory of projects)
 
 1. Time Log
-    1. Need to add Dates
 
 1. Design Paradigm
     1. 250-350 words
