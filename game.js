@@ -3,6 +3,7 @@ var ground;
 var obstacles;
 var tps =100;
 var key;
+var time; 
 var myGameArea = {
   context: null,
   canvas: document.createElement("canvas"),
@@ -22,6 +23,9 @@ var myGameArea = {
   },
   clear: function () {
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+  },
+  stop: function () {
+    clearInterval(this.interval);
   }
 }
 
@@ -32,6 +36,25 @@ class Component {
     this.x = x;
     this.y = y;
     this.color = color;
+
+    this.crashWith = function(ob) {
+      var myleft = this.x;
+      var myright = this.x + (this.width);
+      var mytop = this.y;
+      var mybottom = this.y + (this.height);
+      var objleft = ob.x;
+      var objright = ob.x + (ob.width);
+      var objtop = ob.y;
+      var objbottom = ob.y + (ob.height);
+      var crash = true;
+      if ((mybottom < objtop) ||
+      (mytop > objbottom) ||
+      (myright < objleft) ||
+      (myleft > objright)) {
+        crash = false;
+      }
+      return crash;
+    }
   }
   update = function () {
     let ctx = myGameArea.context;
@@ -49,6 +72,7 @@ function startGame() {
   myCharacter = new Character();
   ground = new Component(900, 300, "green", 0, 400);
   obstacles = [new Obstacle()];
+  time = new Timer();
 }
 class Character extends Component{
   charGrounded = true;
@@ -88,7 +112,31 @@ class Obstacle extends Component {
   };
 }
 
+class Timer {
+  constructor(){
+    var currentTime = 60000;
+  }
+
+  getTime = function () {
+    return(currentTime);
+  }
+
+  update = function () {
+    currentTime -= 1;
+  }
+}
+
 function updateGameArea() {
+
+  for(let ob of obstacles){
+    if(myCharacter.crashWith(ob)){
+      myGameArea.stop();
+      document.getElementById("gameOver").innerHTML = "You loose! Refresh to try again!";
+    }
+  }
+
+  
+  
   myCharacter.clear(); //we use myCharacter.clear() instead of myGameArea.clear() because we don't want the ground to clear
   for (let ob of obstacles) {
     ob.clear();
@@ -100,4 +148,6 @@ function updateGameArea() {
     ob.move();
     ob.update();
   }
+
+
 }
