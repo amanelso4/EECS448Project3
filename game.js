@@ -3,7 +3,8 @@ var ground;
 var obstacles;
 var tps =100;
 var key;
-var time; 
+var timer;
+var timeLeft = 6000;
 var myGameArea = {
   context: null,
   canvas: document.createElement("canvas"),
@@ -72,7 +73,7 @@ function startGame() {
   myCharacter = new Character();
   ground = new Component(900, 300, "green", 0, 400);
   obstacles = [new Obstacle()];
-  time = new Timer();
+  timer = setInterval(updateTimer, 1000);
 }
 class Character extends Component{
   charGrounded = true;
@@ -112,19 +113,14 @@ class Obstacle extends Component {
   };
 }
 
-class Timer {
-  constructor(){
-    var currentTime = 60000;
-  }
-
-  getTime = function () {
-    return(currentTime);
-  }
-
-  update = function () {
-    currentTime -= 1;
+function updateTimer() {
+  timeLeft = timeLeft - 1;
+  if(timeLeft === 0){
+    myGameArea.stop();
+    document.getElementById("gameOver").innerHTML = "You WIN! Refresh to try again!";
   }
 }
+
 
 function updateGameArea() {
 
@@ -135,7 +131,8 @@ function updateGameArea() {
     }
   }
 
-  
+  updateTimer();
+
   
   myCharacter.clear(); //we use myCharacter.clear() instead of myGameArea.clear() because we don't want the ground to clear
   for (let ob of obstacles) {
