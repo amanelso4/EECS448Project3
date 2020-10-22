@@ -26,3 +26,4 @@
 | Made Documentation Plan Document/Fixed Time Log  | .75 hours             | Amanda Nelson      | 10/20 |
 | Finished UML Modeling Diagram Requirement        | .5  hours             | Amanda Nelson      | 10/20 |
 | Finished Design Paradigm Requirement             | .5  hours             | Amanda Nelson      | 10/20 |
+|Finished Design Pattern & Architecture Requirement| 1   hours             | Amanda Nelson      | 10/20 |
