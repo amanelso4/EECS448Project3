@@ -5,6 +5,9 @@ var tps =100;
 var key;
 var timer;
 var timeLeft = 6000;
+var obstacleFreq = .01; // 0-1, smaller = less frequent
+var minDist = 400; // Minimum distance between obstacles
+
 var myGameArea = {
   context: null,
   canvas: document.createElement("canvas"),
@@ -71,15 +74,15 @@ class Component {
 function startGame() {
   myGameArea.start();
   myCharacter = new Character();
+  obstacles = [];
   ground = new Component(900, 300, "green", 0, 400);
-  obstacles = [new Obstacle()];
   timer = setInterval(updateTimer, 1000);
 }
 class Character extends Component{
   charGrounded = true;
   yVelocity = 0;
-  gravity = 5;
-  jumpStrength = 400;
+  gravity = 20;
+  jumpStrength = 700;
   constructor(){
     super(30, 50, "black", 10, 350);
   }
@@ -109,7 +112,7 @@ class Obstacle extends Component {
   }
 
   move = function () {
-    this.x -= 1;
+    this.x -= 5;
   };
 }
 
@@ -127,7 +130,13 @@ function updateGameArea() {
   for(let ob of obstacles){
     if(myCharacter.crashWith(ob)){
       myGameArea.stop();
-      document.getElementById("gameOver").innerHTML = "You loose! Refresh to try again!";
+      document.getElementById("gameOver").innerHTML = "You lose! Refresh to try again!";
+    }
+  }
+
+  if (Math.random() < obstacleFreq) {
+    if (obstacles.length < 1 || myGameArea.canvas.width - obstacles[obstacles.length - 1].x >= minDist) {
+        obstacles.push(new Obstacle());
     }
   }
 

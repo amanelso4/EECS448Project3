@@ -27,3 +27,4 @@
 | Finished UML Modeling Diagram Requirement        | .5  hours             | Amanda Nelson      | 10/20 |
 | Finished Design Paradigm Requirement             | .5  hours             | Amanda Nelson      | 10/20 |
 |Finished Design Pattern & Architecture Requirement| 1   hours             | Amanda Nelson      | 10/20 |
+| Add multiple obstacles                           | .5   hours            | Reece Mathews      | 10/22 |
