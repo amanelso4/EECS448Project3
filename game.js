@@ -139,7 +139,9 @@ function updateGameArea() {
         obstacles.push(new Obstacle());
     }
   }
-
+  if(myGameArea.canvas.width - obstacles[obstacles.length - 1].x >= myGameArea.canvas.width*.9){
+    obstacles.push(new Obstacle());
+  }
   updateTimer();
 
   
