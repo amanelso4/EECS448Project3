@@ -79,6 +79,7 @@ function startGame() {
   timer = setInterval(updateTimer, 1000);
 }
 class Character extends Component{
+  crouching =false;
   charGrounded = true;
   yVelocity = 0;
   gravity = 20;
@@ -87,6 +88,22 @@ class Character extends Component{
     super(30, 50, "black", 10, 350);
   }
   move = function (){
+   
+    if(key == "s"){
+      if(!this.crouching){
+        this.y+=25;
+      }
+      this.crouching=true;
+      this.height = 25;
+
+    }else{
+      if(this.crouching){
+        this.y-=25;
+      }
+      this.crouching=false;
+      this.height = 50;
+
+    }
     if(this.x <=50){
       this.x +=1;
     }
