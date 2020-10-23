@@ -28,3 +28,4 @@
 | Finished Design Paradigm Requirement             | .5  hours             | Amanda Nelson      | 10/20 |
 |Finished Design Pattern & Architecture Requirement| 1   hours             | Amanda Nelson      | 10/20 |
 | Add multiple obstacles                           | .5   hours            | Reece Mathews      | 10/22 |
+| Added ducking                                    | .5 hour               | Kevin Carlson      | 10/23 |
