@@ -116,6 +116,7 @@ function startGame() {
  * A game object controlled by the player.
  */
 class Character extends Component{
+  crouching =false;
   charGrounded = true;
   yVelocity = 0;
   gravity = 20;
@@ -127,6 +128,22 @@ class Character extends Component{
    * Check for key presses and move the character accordingly.
    */
   move = function (){
+   
+    if(key == "s"){
+      if(!this.crouching){
+        this.y+=25;
+      }
+      this.crouching=true;
+      this.height = 25;
+
+    }else{
+      if(this.crouching){
+        this.y-=25;
+      }
+      this.crouching=false;
+      this.height = 50;
+
+    }
     if(this.x <=50){
       this.x +=1;
     }
@@ -193,7 +210,9 @@ function updateGameArea() {
         obstacles.push(new Obstacle());
     }
   }
-
+  if(myGameArea.canvas.width - obstacles[obstacles.length - 1].x >= myGameArea.canvas.width*.9){
+    obstacles.push(new Obstacle());
+  }
   updateTimer();
 
   
