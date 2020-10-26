@@ -1,6 +1,6 @@
 # Setting Up the Dev Environment
 
-1. Clone the [repo](https://github.com/amanelso4/EECS448Project3.git) with `git clone https://github.com/amanelso4/EECS448Project3.git.git`
+1. Clone the [repo](https://github.com/amanelso4/EECS448Project3) with `git clone https://github.com/amanelso4/EECS448Project3.git`
 1. Install [Node.js](https://nodejs.org/en/)
 1. cd to the project root with `cd EECS448Project3`
 1. Install the dependencies for generating documentation with `npm install`
