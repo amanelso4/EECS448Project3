@@ -10,6 +10,7 @@
 | Winning/Finish Line Implementation                                                                                       | 3 hours       | Kayton Froeschl    |
 | Team Meetings                                                                                                            | 5 hours       | Entire Team        |
 
+### We came up with these time estimates based on our Previous projects (project 1 and 2).
 <br/>
 <br/>
 
@@ -26,6 +27,7 @@
 | Converted time estimation document to markdown   | .16 hour              | Reece Mathews      | 10/19 |
 | Added player class, with movement                | 1.06 hour             | Kevin Carlson      |       |
 | Made Documentation Plan Document/Fixed Time Log  | .75 hours             | Amanda Nelson      | 10/20 |
+| Progress Update Teams Meeting                    | .5   hour             | Entire Team        | 10/21 |
 | Finished UML Modeling Diagram Requirement        | .5 hours              | Amanda Nelson      | 10/20 |
 | Finished Design Paradigm Requirement             | .5 hours              | Amanda Nelson      | 10/20 |
 |Finished Design Pattern & Architecture Requirement| 1 hours               | Amanda Nelson      | 10/20 |
