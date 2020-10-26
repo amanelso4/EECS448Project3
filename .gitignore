@@ -3,3 +3,4 @@
 ~*
 *.tmp
 debug.log
+node_modules

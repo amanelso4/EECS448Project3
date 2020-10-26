@@ -1,0 +1,23 @@
+{
+  "name": "eecs448project3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanelso4/EECS448Project3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amanelso4/EECS448Project3/issues"
+  },
+  "homepage": "https://github.com/amanelso4/EECS448Project3#readme",
+  "dependencies": {
+    "better-docs": "^2.3.2",
+    "jsdoc": "^3.6.6"
+  }
+}
